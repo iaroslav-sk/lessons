@@ -1,0 +1,46 @@
+@import url(reset.css);
+
+h1 {
+  color: red;
+}
+
+ol > li {
+  color: purple;
+}
+
+div h2 {
+  color: green;
+}
+
+#section_3 {
+  color: blue;
+}
+
+[class*="link"] {
+  color: rgb(170, 247, 6);
+}
+
+.header-content.text {
+  color: blueviolet;
+}
+
+.section-material-calture h2 {
+  color: hotpink;
+}
+.footer-main-title ~ a {
+  color: salmon;
+}
+
+.source-text-wrapper,
+.book-text-wrapper {
+  color: orange;
+}
+.section-material-calture > div {
+  color: aqua;
+}
+.section-unmaterial-calture h2 {
+  color: slategray;
+}
+.section-unmaterial-calture > .section-title + div {
+  color: navajowhite;
+}
