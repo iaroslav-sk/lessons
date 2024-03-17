@@ -1,0 +1,90 @@
+/* Reset styles */
+@import url(reset.css);
+
+/* import font */
+@import url(font.css);
+
+/* Example import ROBOTO font with css import */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap");
+
+body {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  color: #2b2929;
+}
+
+.text {
+  line-height: 1.875; /* 30/16 */
+  letter-spacing: 0px;
+  white-space: wrap;
+}
+
+.main-title {
+  font-family: inherit, sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  font-style: italic;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 7px;
+  color: rgb(86, 67, 20);
+  text-shadow: 5px 5px 2px rgb(176, 138, 214, 0.5);
+}
+.section-title {
+  font-family: inherit, serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
+  word-spacing: 10px;
+  text-decoration: underline;
+  color: darkblue;
+  text-shadow: -1px -1px 20px rgba(216, 43, 84, 0.8);
+}
+
+.section-subtitle {
+  font-family: "Roboto", serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  text-decoration: line-through;
+  white-space: nowrap;
+  word-spacing: 2px;
+  color: rgb(50, 223, 15);
+  text-shadow: -1px -1px 20px rgba(100, 224, 98, 0.8);
+  text-decoration-color: rgb(207, 193, 194);
+  text-decoration-style: double;
+}
+
+.choose-bad-text {
+  font-family: "Kyiv Region", serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  word-spacing: 3px;
+}
+
+.room-decoration-text {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  text-align: left;
+  word-spacing: 2px;
+}
+.item-text {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: lighter;
+}
+
+.footer-text {
+  font-family: "Rainbow", sans-serif;
+  font-weight: 700;
+  line-height: 2.875;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  word-spacing: 10px;
+  color: blueviolet;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4), -2px -2px 5px rgb(87, 110, 205);
+}
