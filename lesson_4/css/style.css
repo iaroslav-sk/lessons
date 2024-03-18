@@ -22,7 +22,6 @@ body {
 }
 
 .main-title {
-  font-family: inherit, sans-serif;
   font-weight: 700;
   font-size: 48px;
   font-style: italic;
@@ -33,7 +32,6 @@ body {
   text-shadow: 5px 5px 2px rgb(176, 138, 214, 0.5);
 }
 .section-title {
-  font-family: inherit, serif;
   font-size: 24px;
   font-weight: 700;
   text-align: left;
@@ -48,7 +46,6 @@ body {
   font-family: "Roboto", serif;
   font-size: 20px;
   font-weight: 700;
-  text-align: left;
   text-decoration: line-through;
   white-space: nowrap;
   word-spacing: 2px;
@@ -60,21 +57,18 @@ body {
 
 .choose-bad-text {
   font-family: "Kyiv Region", serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
-  text-align: left;
   word-spacing: 3px;
 }
 
 .room-decoration-text {
   font-family: "Roboto", serif;
   font-weight: 400;
-  text-align: left;
   word-spacing: 2px;
 }
 .item-text {
-  font-family: "Proxima Nova", sans-serif;
-  font-weight: lighter;
+  word-spacing: 3px;
 }
 
 .footer-text {
