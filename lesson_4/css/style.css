@@ -18,7 +18,7 @@ body {
 .text {
   line-height: 1.875; /* 30/16 */
   letter-spacing: 0px;
-  white-space: wrap;
+  word-wrap: wrap;
 }
 
 .main-title {

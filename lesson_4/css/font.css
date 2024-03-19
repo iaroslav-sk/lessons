@@ -1,21 +1,21 @@
 @font-face {
   font-family: "Proxima Nova";
   src: url("../fonts/Mark-Simonson-Proxima-Nova-Bold.woff2") format("woff2");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Proxima Nova";
   src: url("../fonts/Mark-Simonson-Proxima-Nova-Regular.woff2") format("woff2");
-  font-weight: medium;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Proxima Nova";
   src: url("../fonts/Mark-Simonson-Proxima-Nova-Light.woff2") format("woff2");
-  font-weight: lighter;
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
@@ -23,7 +23,7 @@
 @font-face {
   font-family: "Kyiv Region";
   src: url("../fonts/KyivRegion-Regular.woff2") format("woff2");
-  font-weight: medium;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
