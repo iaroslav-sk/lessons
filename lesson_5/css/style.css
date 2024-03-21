@@ -1,0 +1,140 @@
+/* Reset styles */
+@import url(reset.css);
+
+/* import font */
+@import url(font.css);
+
+/* Example import ROBOTO font with css import */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap");
+
+body {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  color: #2b2929;
+  text-align: center;
+}
+.text {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  color: #2b2929;
+  line-height: 1.875; /* 30/16 */
+  letter-spacing: 0px;
+}
+.main-title {
+  font-size: 80px;
+  line-height: 1.2;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 7px;
+  color: #2b2929;
+  margin: 80px 0px;
+  text-transform: uppercase;
+}
+.section-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-family: "Proxima Nova", sans-serif;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4; /* 28/20 */
+}
+.choose-bad-text {
+  font-size: 14px;
+  font-weight: 400;
+}
+/*================ Products Cards Section =================== */
+.products-cards-section {
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 100px 300px 100px 335px;
+}
+.products-section-title {
+  margin-bottom: 60px;
+}
+.products-image-list {
+  text-align: center;
+}
+.products-image-list > .list-item {
+  display: inline-block;
+}
+.products-picture {
+  max-width: 200px;
+  margin: 0px 10px 0px -5px;
+}
+/*================ Preference Section =================== */
+.preference-section {
+  margin-bottom: 40px;
+}
+.preference-title {
+  margin-bottom: 40px;
+}
+.preference-list {
+  text-align: center;
+}
+.preference-list-item {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 300px;
+  margin: 0px 30px 0px 0px;
+}
+.preference-list-item > .item-title {
+  margin: 20px 0px;
+}
+.preference-list-item > .text {
+  font-size: 16px;
+  text-align: center;
+}
+/*================ Section Room Decoration =================== */
+.section-room-decoration {
+  max-width: 1070px;
+  display: inline-block;
+}
+.room-decoration-main-pic {
+  max-width: 1070px;
+  margin-bottom: 40px;
+}
+.room-decoration-title {
+  text-align: left;
+  font-size: 40px;
+  font-style: normal;
+  margin-top: 0;
+  font-weight: 400;
+  line-height: 1.2; /* 48/40 */
+  margin-bottom: 40px;
+}
+.room-decoration-text {
+  text-align: left;
+}
+.room-decoration-main-pic + .room-decoration-text {
+  padding-bottom: 10px;
+}
+.room-decoration-subtitle {
+  padding: 20px 0px 30px 0px;
+}
+.room-decoretion-list {
+  text-align: left;
+}
+.room-decoration-item {
+  padding-bottom: 20px;
+  padding-left: 47px;
+}
+/* =========================================== */
+.footer-text {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 2.875;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  word-spacing: 10px;
+}
