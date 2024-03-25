@@ -33,6 +33,10 @@ body {
   margin: 80px 0px;
   text-transform: uppercase;
 }
+
+.section {
+  max-width: 1290px;
+}
 .section-title {
   font-family: "Roboto", sans-serif;
   font-size: 50px;
@@ -56,7 +60,7 @@ body {
 .products-cards-section {
   background-color: #fff;
   box-sizing: border-box;
-  padding: 100px 300px 100px 335px;
+  padding: 100px 0px;
 }
 .products-section-title {
   margin-bottom: 60px;
@@ -65,14 +69,16 @@ body {
   text-align: center;
 }
 .products-image-list > .list-item {
+  margin: 0px 10px 0px -5px;
   display: inline-block;
 }
 .products-picture {
   max-width: 200px;
-  margin: 0px 10px 0px -5px;
 }
 /*================ Preference Section =================== */
 .preference-section {
+  /* text-align: center; */
+  margin: 0 auto;
   margin-bottom: 40px;
 }
 .preference-title {
@@ -81,11 +87,14 @@ body {
 .preference-list {
   text-align: center;
 }
+.preference-title-wrapper {
+  text-transform: uppercase;
+}
 .preference-list-item {
   display: inline-block;
   vertical-align: top;
-  max-width: 300px;
-  margin: 0px 30px 0px 0px;
+  max-width: 280px;
+  margin: 0px 20px 0px 0px;
 }
 .preference-list-item > .item-title {
   margin: 20px 0px;
@@ -96,7 +105,8 @@ body {
 }
 /*================ Section Room Decoration =================== */
 .section-room-decoration {
-  max-width: 1070px;
+  /* max-width: 1070px; */
+
   display: inline-block;
 }
 .room-decoration-main-pic {
@@ -116,10 +126,10 @@ body {
   text-align: left;
 }
 .room-decoration-main-pic + .room-decoration-text {
-  padding-bottom: 10px;
+  margin: 10px;
 }
 .room-decoration-subtitle {
-  padding: 20px 0px 30px 0px;
+  margin: 20px 0px 30px 0px;
 }
 .room-decoretion-list {
   text-align: left;
