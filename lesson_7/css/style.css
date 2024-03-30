@@ -1,0 +1,440 @@
+/* Reset styles */
+@import url(reset.css);
+
+/* import font */
+@import url(font.css);
+
+/* Example import ROBOTO font with css import */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap");
+
+body {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  background-image: linear-gradient(-180deg, #000000e6 0, #000000fc 100%),
+    linear-gradient(-180deg, #000000e6 0, #000000fc 100%);
+}
+.text {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.875; /* 30/16 */
+  letter-spacing: 0px;
+}
+.main-title {
+  font-size: 80px;
+  line-height: 1.2;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 7px;
+  color: #2b2929;
+  margin: 80px 0px;
+  text-transform: uppercase;
+}
+.section {
+  max-width: 1290px;
+  margin: 0 auto;
+}
+.section-title {
+  font-size: 40px;
+  font-style: 400;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  line-height: 1.2; /* 48/40 */
+}
+
+.section-subtitle {
+  font-family: "Proxima Nova", sans-serif;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4; /* 28/20 */
+}
+.choose-bad-text {
+  font-size: 14px;
+  font-weight: 400;
+}
+/*================== About Me Section =================== */
+.about-me-section > * {
+  margin-bottom: 20px;
+}
+.about-me-section > *:last-child {
+  margin-bottom: 0px;
+}
+.about-me-section {
+  padding: 100px 0px;
+  text-align: center;
+  margin: auto;
+}
+.about-me-title {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+  line-height: 70px;
+}
+.about-me-title:hover {
+  cursor: pointer;
+  color: #b4acac;
+}
+.about-me-title:active {
+  border: 1px solid #336dc4e6;
+  border-radius: 10px;
+}
+.about-me-title::after {
+  content: "";
+  display: block;
+  min-width: 120%;
+  margin: 15px 0px 0px -10%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(66, 255, 0, 1) 51%,
+    rgba(36, 0, 255, 1) 100%
+  );
+}
+
+.about-me-text {
+  display: inline-block;
+  margin-bottom: 40px;
+  max-width: 992px;
+  font-size: 18px;
+  font-family: "Exo", sans-serif;
+  font-weight: 400;
+  line-height: 2.22; /* 40/18 */
+}
+.about-me-text:hover {
+  text-decoration: underline;
+}
+
+.skills-list-item {
+  display: inline-block;
+}
+.skills-list-item:not(:last-child) {
+  margin-right: 130px;
+}
+.skills-list-item:hover {
+  cursor: pointer;
+  font-size: 20px;
+  color: #71b46ce6;
+}
+.skills-list-item::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(236, 4, 10, 1) 0%,
+    rgba(9, 121, 33, 1) 51%,
+    rgba(0, 18, 255, 1) 100%
+  );
+  margin-top: -13px;
+  margin-left: -60px;
+}
+/*================== Section Room Decoration =================== */
+.section-room-decoration > * {
+  margin-bottom: 40px;
+}
+.section-room-decoration > *:last-child {
+  margin-bottom: 0px;
+}
+.section-room-decoration {
+  padding: 60px 0px;
+}
+.room-decoration-main-pic {
+  width: 100%;
+}
+.room-decoration-title {
+  text-align: left;
+  font-weight: 700;
+  line-height: 1.2; /* 48/40 */
+}
+.room-decoration-text {
+  text-align: left;
+}
+.room-decoration-text:hover {
+  text-decoration: underline;
+}
+.room-decoration-main-pic + .room-decoration-text {
+  margin-bottom: 10px;
+}
+.room-decoration-subtitle {
+  margin: 20px 0px 30px 0px;
+}
+.room-decoration-subtitle:hover {
+  font-style: italic;
+  color: aquamarine;
+}
+.room-decoretion-list {
+  display: inline-block;
+  text-align: left;
+}
+.room-decoretion-list > * {
+  margin-bottom: 10px;
+}
+.room-decoretion-list > *:last-child {
+  margin-bottom: 0px;
+}
+.room-decoration-item {
+  display: inline-block;
+}
+.room-decoration-item {
+  background-image: url("../img/background/decoration-list-mark.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+  padding-left: 47px;
+}
+.room-decoration-item:hover {
+  background-image: url("../img/background/decoration-list-mark.png");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+  padding-left: 55px;
+}
+.room-decoration-item:nth-child(even) {
+  color: #cba422;
+  background-color: #2c2b2b;
+  border: 1px solid #201f1f;
+  border-radius: 20px;
+}
+.room-decoration-item:nth-child(odd) {
+  color: #22cbaf;
+  background-color: #218989;
+  border: 1px solid #201f1f;
+  border-radius: 20px;
+}
+.room-decoration-item:hover > .item-text {
+  font-size: 18px;
+  color: rgb(194, 228, 69);
+}
+/* ================= Foooter ========================== */
+.footer {
+  max-width: 1290px;
+  margin: auto;
+  padding: 100px 0px;
+}
+.contacts-list {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+.contact-item {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Exo", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}
+.contact-item:not(:first-child) {
+  margin-left: 80px;
+}
+.contact-item:hover {
+  font-size: 24px;
+  color: #cba422;
+}
+.contact-item:visited {
+  color: #a09e98;
+}
+
+.contact-item:focus-visible {
+  padding: 5px;
+  outline: 2px dashed rgb(99, 83, 83);
+}
+.phone-contact-item::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/background/phone_pic.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -18px;
+  margin-left: -40px;
+}
+.location-contact-item::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/background/location_pic.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -18px;
+  margin-left: -40px;
+}
+.mail-contact-item::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/background/email_pic.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -18px;
+  margin-left: -40px;
+}
+/* =================GAME=================== */
+.game {
+  min-height: 810px;
+  text-align: initial;
+}
+.game-title {
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.2; /* 48/40 */
+  margin-bottom: 40px;
+}
+.line {
+  background-color: #cba422;
+}
+.line_1 {
+  width: 50px;
+  height: 50px;
+}
+.line_2 {
+  width: 50px;
+  height: 50px;
+}
+
+.line_1:hover ~ .line_2,
+.line_2:hover {
+  width: 1250px;
+}
+
+.line_3 {
+  display: inline-block;
+  width: 1200px;
+  height: 50px;
+}
+
+.line_2:hover ~ .line_3_1,
+.line_3_1:hover {
+  visibility: visible;
+}
+
+.line_3_1 {
+  visibility: hidden;
+  display: inline-block;
+  height: 100px;
+  width: 50px;
+}
+
+.line_4 {
+  display: inline-block;
+  width: 450px;
+  height: 50px;
+}
+
+.line_4_1 {
+  visibility: hidden;
+  display: inline-block;
+  width: 800px;
+  height: 50px;
+}
+.line_3_1:hover ~ .line_4_1,
+.line_4_1:hover {
+  visibility: visible;
+}
+
+.line_5 {
+  display: inline-block;
+  width: 450px;
+  height: 50px;
+}
+
+.line_5_1 {
+  visibility: hidden;
+  display: inline-block;
+  width: 50px;
+  height: 200px;
+}
+
+.line_4_1:hover ~ .line_5_1,
+.line_5_1:hover {
+  visibility: visible;
+}
+
+.line_6 {
+  visibility: hidden;
+  display: inline-block;
+  width: 300px;
+  height: 50px;
+}
+
+.line_5_1:hover ~ .line_6,
+.line_6:hover {
+  visibility: visible;
+}
+
+.line_7 {
+  display: inline-block;
+  width: 750px;
+  height: 50px;
+}
+
+.line_7_1 {
+  visibility: hidden;
+  display: inline-block;
+  width: 50px;
+  height: 100px;
+}
+
+.line_6:hover ~ .line_7_1,
+.line_7_1:hover {
+  visibility: visible;
+}
+
+.line_8 {
+  display: inline-block;
+  width: 750px;
+  height: 50px;
+}
+
+.line_8_1 {
+  visibility: hidden;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.line_7_1:hover ~ .line_8_1,
+.line_8_1:hover {
+  visibility: visible;
+  background: #db2a2a;
+}
+
+.line_9 {
+  display: inline-block;
+  width: 700px;
+  height: 50px;
+}
+
+.line_9_1 {
+  visibility: hidden;
+  display: inline-block;
+  width: 150px;
+  height: 100px;
+  font-size: 25px;
+  padding-top: 30px;
+  color: #cba422;
+  background-color: #16b381;
+  border: 1px solid red;
+  border-radius: 20px;
+}
+
+.line_8_1:hover ~ .line_9_1,
+.line_9_1:hover {
+  visibility: visible;
+}
