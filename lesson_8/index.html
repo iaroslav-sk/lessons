@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Example import font inline HTML file -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Over+the+Rainbow&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Train+One&display=swap"
+        rel="stylesheet">
+    <title>Shop</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="main-title">Зображення та їх тип:</h1>
+    </header>
+    <main>
+        <h2 class="img-descr">Приклади зображень</h2>
+        <section class="section">
+            <ul class="img-list">
+                <li class="img-list-item">
+                    <h3 class="img-descr">Контентне/фонове растрове зображення png > webp "1x,2x,4x"</h3>
+                    <img src="img/main-1x.webp" alt="мебльована кімната"
+                        srcset="img/main-2x.webp 2x, img/main-4x.webp 4x" class="main-pic">
+                </li>
+                <li class="img-list-item">
+                    <h3 class="img-descr">Контентне растрове зображення png > webp "1x,2x,4x"</h3>
+                    <img src="img/content/sale-1x.webp" alt="банер знижки"
+                        srcset="img/content/sale-2x 2x, img/content/sale-4x.webp 4x" class="content-pic">
+                </li>
+                <li class="img-list-item">
+                    <h3 class="img-descr">Контентне растрове зображення png > webp "1x,2x,4x"</h3>
+                    <img src="img/content/sofa-1x.webp" alt="диван"
+                        srcset="img/content/sofa-2x.webp 2x, img/content/sofa-4x.webp 4x" class="content-pic">
+                </li>
+                <li class="img-list-item">
+                    <h3 class="img-descr">Фонове растрове зображення png > webp "1x,2x,4x"</h3>
+                    <picture>
+                        <source srcset="img/background/wallet_2x.webp 2x, img/background/wallet_4x.webp 4x">
+                        <img src="img/background/wallet_1x.webp" alt="кольорове зображення гаманця" class="wallet_pic">
+                    </picture>
+                </li>
+                <li class="img-list-item">
+                    <h3 class="img-descr">Контентне векторне зображення svg</h3>
+                    <ul class="paid-list list">
+                        <li class="paid-list-item item">
+                            <img src="img/icon/pay-1.svg" alt="через термінал">
+                        </li>
+
+                        <li class="paid-list-item item"><img src="img/icon/pay-2.svg" alt="на карту приват банку"></li>
+
+                        <li class="paid-list-item item"> <img src="img/icon/pay-3.svg" alt="безготівкова"></li>
+
+                        <li class="paid-list-item item"> <img src="img/icon/pay-4.svg" alt="післяоплата"></li>
+                    </ul>
+                </li>
+                <li class="img-list-item">
+                    <h3 class="img-descr">Контентне векторне зображення svg</h3>
+
+                    <ul class="deliver-list list">
+
+                        <li class="deliver-list-item item"> <img src="img/icon/pay-5.svg" alt="оплата по Україні"></li>
+                        <li class="deliver-list-item item"><img src="img/icon/pay-6.svg" alt="кредит/розтермінування">
+                        </li>
+                        <li class="deliver-list-item item"><img src="img/icon/pay-7.svg" alt="передплата"></li>
+                    </ul>
+                </li>
+                <li class="img-list-item">
+                    <h3 class="img-descr">Контентне векторне зображення svg</h3>
+                    <ul class="advantages-list list">
+                        <li class="advantages-list-item item"><img src="img/icon/preim-1.svg"
+                                alt="безкоштовна доставка">
+                        </li>
+                        <li class="advantages-list-item item"><img src="img/icon/preim-2.svg" alt="безкоштовна збірка">
+                        </li>
+                        <li class="advantages-list-item item"><img src="img/icon/preim-3.svg"
+                                alt="післягарантійне обслуговування"></li>
+                        <li class="advantages-list-item item"><img src="img/icon/preim-4.svg" alt="знижка клієнтам">
+                        </li>
+                    </ul>
+                </li>
+                <li class="img-list-item">
+                    <h3 class="img-descr">Іконки векторне зображення svg</h3>
+                    <ul class="icon-list list">
+                        <li class="icon-list-item item"><img src="img/icon/question.svg" alt="запитання">
+                        </li>
+                        <li class="icon-list-item item"><img src="img/icon/logo-1.svg" alt="логотип">
+                        </li>
+                        <li class="icon-list-item item"><img src="img/icon/star.svg" alt="відмітити">
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+    </footer>
+</body>
+
+</html>
