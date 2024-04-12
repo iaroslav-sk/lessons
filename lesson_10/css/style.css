@@ -34,20 +34,20 @@ body {
 .main-menu > :not(:last-child) {
   margin-right: 30px;
 }
-.main-menu__button {
+.main-menu__link {
   background-color: hsl(36, 100%, 67%);
   padding: 11px 20px;
   border-radius: 8px;
   vertical-align: top;
 }
-.main-menu__button > :not(:last-child) {
+.main-menu__link > :not(:last-child) {
   margin-right: 10px;
 }
-.main-menu__button > .button__icon {
+.main-menu__link > .link-button__icon {
   display: inline-block;
   max-width: 24px;
 }
-.main-menu__button > .button__text {
+.main-menu__link > .link-button__text {
   color: #fff;
   font-size: 19px;
   font-weight: 600;
