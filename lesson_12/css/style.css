@@ -1,0 +1,246 @@
+@import url(reset.css);
+
+body {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1290px;
+}
+.main {
+  background: #f8f8f8;
+  /* padding-block: 40px; */
+}
+/* ================= Header ====================== */
+.header {
+  background: linear-gradient(
+    90deg,
+    rgba(236, 230, 4, 1) 0%,
+    rgba(211, 63, 232, 1) 57%,
+    rgba(31, 255, 0, 1) 100%
+  );
+  padding-block: 25px;
+  margin: 0 auto;
+  text-align: center;
+}
+.header__title {
+  font-size: 50px;
+}
+
+/* ================ Car ========================= */
+.buss-wrapper {
+  position: relative;
+  border: 2px solid greenyellow;
+  min-height: 530px;
+  background: linear-gradient(
+    0deg,
+    rgba(173, 173, 173, 1) 7%,
+    rgba(63, 232, 131, 1) 39%,
+    rgba(204, 248, 255, 1) 57%,
+    rgba(204, 248, 255, 1) 62%
+  );
+}
+.buss {
+  position: relative;
+  top: 500px;
+  animation-name: move;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier(0, 1.035, 0.94, 1.005);
+}
+@keyframes move {
+  0% {
+    translate: -1400px 0px;
+  }
+  50% {
+    translate: -10px 0px;
+  }
+  100% {
+    translate: 0px 0px;
+  }
+}
+.buss__body {
+  position: absolute;
+  bottom: 62px;
+  left: 152px;
+  background-color: rgb(229, 226, 59);
+  width: 900px;
+  height: 233px;
+  border-radius: 50px 10px 0px 0px;
+}
+
+.buss__right-circle,
+.buss__left-circle {
+  position: absolute;
+  bottom: 20px;
+  left: 280px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border: 3px solid white;
+  border-style: dashed;
+  border-radius: 50%;
+  animation-name: rotate;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier(0, 1.035, 0.005, 1.035);
+}
+.buss__left-circle {
+  bottom: 20px;
+  left: 800px;
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.buss__window-front {
+  position: absolute;
+  bottom: 130px;
+  right: 234px;
+  background-color: rgb(197, 163, 229);
+  width: 40px;
+  height: 154px;
+  border-radius: 50px 10px 5px 10px;
+}
+.buss__window-left {
+  position: absolute;
+  bottom: 130px;
+  left: 167px;
+  background-color: rgb(197, 163, 229);
+  width: 196px;
+  height: 148px;
+  border-radius: 50px 10px 5px 10px;
+}
+.buss__window-middle {
+  position: absolute;
+  bottom: 130px;
+  left: 385px;
+  background-color: rgb(197, 163, 229);
+  width: 148px;
+  height: 148px;
+  border-radius: 10px 10px 10px 10px;
+}
+.buss__window-right {
+  position: absolute;
+  bottom: 130px;
+  left: 725px;
+  background-color: rgb(197, 163, 229);
+  width: 271px;
+  height: 148px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.buss__dor-right {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 62px;
+  left: 621px;
+  width: 60px;
+  height: 160px;
+  border: 3px solid black;
+  border-radius: 10px 10px 4px 4px;
+  animation-name: right;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.3, 0.27, 0.77, 0.765);
+  animation-fill-mode: forwards;
+}
+@keyframes right {
+  0% {
+    translate: 0px 0px;
+  }
+  100% {
+    translate: 35px 0px;
+  }
+}
+
+.buss__dor-left {
+  position: absolute;
+  bottom: 62px;
+  left: 560px;
+  width: 60px;
+  height: 160px;
+  border: 3px solid black;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px 10px 4px 4px;
+  animation-name: left;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.3, 0.27, 0.77, 0.765);
+  animation-fill-mode: forwards;
+}
+@keyframes left {
+  0% {
+    translate: 0px 0px;
+  }
+  100% {
+    translate: -25px 0px;
+  }
+}
+.buss__salon {
+  position: absolute;
+  bottom: 62px;
+  left: 577px;
+  width: 97px;
+}
+
+.buss__light-front {
+  background-color: red;
+  position: absolute;
+  bottom: 83px;
+  right: 233px;
+  width: 9px;
+  height: 40px;
+  border: 3px solid rgb(245, 116, 69);
+  border-radius: 40px;
+}
+
+.buss__light-back {
+  position: absolute;
+  bottom: 102px;
+  left: 151px;
+  width: 9px;
+  height: 66px;
+  background-color: red;
+  border: 3px solid rgb(185, 53, 5);
+  border-radius: 40px;
+}
+.buss__board {
+  position: relative;
+  padding-top: 6px;
+  bottom: 242px;
+  left: 537px;
+  width: 185px;
+  height: 30px;
+  background-color: rgb(36, 33, 33);
+  border: 3px solid rgb(106 96 92);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.board__text {
+  text-transform: uppercase;
+  color: red;
+  font-size: 10px;
+  font-weight: 700;
+  animation-name: text;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier(0.3, 0.27, 0.77, 0.765);
+}
+
+@keyframes text {
+  0% {
+    translate: -400px 0px;
+  }
+  50% {
+    translate: -10px 0px;
+  }
+  100% {
+    translate: 0px 0px;
+  }
+}
