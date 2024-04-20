@@ -27,12 +27,7 @@ body {
 .header__title {
   font-size: 50px;
 }
-
-/* ================ Car ========================= */
-.buss-wrapper {
-  position: relative;
-  border: 2px solid greenyellow;
-  min-height: 530px;
+.main {
   background: linear-gradient(
     0deg,
     rgba(173, 173, 173, 1) 7%,
@@ -40,6 +35,11 @@ body {
     rgba(204, 248, 255, 1) 57%,
     rgba(204, 248, 255, 1) 62%
   );
+}
+
+/* ================ Car ========================= */
+.buss-wrapper {
+  min-height: 530px;
 }
 .buss {
   position: relative;
@@ -104,6 +104,7 @@ body {
   bottom: 130px;
   right: 234px;
   background-color: rgb(197, 163, 229);
+  background-color: rgba(0, 0, 0, 0.5);
   width: 40px;
   height: 154px;
   border-radius: 50px 10px 5px 10px;
@@ -243,4 +244,20 @@ body {
   100% {
     translate: 0px 0px;
   }
+}
+/* ==================foter==================== */
+.footer {
+  color: white;
+  background: linear-gradient(
+    81deg,
+    rgba(73, 68, 68, 1) 7%,
+    rgba(78, 124, 170, 1) 39%,
+    rgba(204, 212, 255, 1) 57%,
+    rgba(144, 198, 207, 1) 69%,
+    rgba(79, 89, 91, 1) 97%
+  );
+  padding-block: 50px;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 150px;
 }
