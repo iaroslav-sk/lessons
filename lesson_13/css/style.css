@@ -1,0 +1,166 @@
+@import url(reset.css);
+
+body {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  background-color: aqua;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1290px;
+}
+.main {
+}
+/* ================= Header ====================== */
+.header {
+display: flex;
+border: 1px solid black;
+}
+.header__title {
+}
+.header__container {
+}
+.about-us {
+  display: flex;
+  border: 1px solid red ;
+}
+.about-us__list {
+  display: flex;
+}
+.list {
+}
+.list__item {
+}
+.list__link {
+}
+.header__contacts {
+  display: flex;
+  border: 1px solid blue;
+}
+
+.contacts__list {
+  display: flex;
+}
+.contacts__list > .list__item {
+  display: inline-block;
+}
+.list__icon {
+}
+.list__icon--messanger {
+}
+.language {
+}
+.language__list {
+}
+.search {
+}
+.main-logo {
+}
+.catalog {
+}
+.catalog__button {
+}
+.button {
+}
+.button__icon {
+}
+.input {
+}
+.input__area {
+}
+.input__icon {
+}
+.call-us {
+}
+.call-us__icon {
+}
+.call-us__schedule {
+}
+.call-us__phone {
+}
+.favorite {
+}
+.favorite__link {
+}
+.favorite__icon {
+}
+.basket {
+}
+.basket__link {
+}
+.basket__icon {
+}
+.categories {
+}
+.categories__left-list {
+}
+.list__link--bold {
+}
+.categories__rigth-list {
+}
+.popular-categories {
+}
+.popular-categories__title {
+}
+.popular-categories__list {
+}
+.list-category {
+}
+.list-category__item {
+}
+.category-card {
+}
+.category-card__name {
+}
+.category-card__products-counter {
+}
+.category-card__pic {
+}
+.category-card__button {
+}
+.button__pic {
+}
+.popular-products {
+}
+.popular-products__top {
+}
+.popular-products__title {
+}
+.popular-products__link {
+}
+.link {
+}
+.link__pic {
+}
+.products {
+}
+.products__list {
+}
+.products__item {
+}
+.product-card {
+}
+.product-card__pic {
+}
+.product-card__size {
+}
+.product-card__title {
+}
+.product-card__exist {
+}
+.exist {
+}
+.exist__pic {
+}
+.exist__text {
+}
+.product-card__cost {
+}
+.cost {
+}
+.cost__previous {
+}
+.cost__actual {
+}
+.footer {
+}
