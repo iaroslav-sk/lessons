@@ -2,6 +2,7 @@
 
 body {
   font-family: "Proxima Nova", sans-serif;
+  color: #2B2929;
   font-weight: 400;
   font-size: 19px;
   line-height: 1.2; 
@@ -11,6 +12,15 @@ body {
   margin: 0 auto;
   max-width: 1320px;
   padding-inline: 15px;
+}
+.section{
+  padding-block-start: 70px;
+ }
+.section__title{
+  color:#2B2929;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 40px;
 }
 /* ================= Header ====================== */
 .about-us {
@@ -191,15 +201,23 @@ line-height: 1.4;
 .popular-categories__list{
   display: flex;
   flex-wrap: wrap;
-  gap: 10px 24px;
-
+  gap: 24px 10px;
 }
 .products__list{
   display: flex;
   flex-wrap: wrap;
 }
+.list-category__item{
+  background-color: #fff;
+  border-radius: 8px;
+}
 .category-card{
-  border: 1px solid black;
+  position: relative;
+  max-width: 250px;
+  background-image: url(../img/icons/category_card_bg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;  
+  background-position: bottom;
 }
 .category-card__name {
   color:  #2B2929;
@@ -214,9 +232,60 @@ font-size: 20px;
 font-weight: 600;
 line-height: 1.4;
 }
-.category-card__pic {
+.category-card___top-side{
+display: flex;
+flex-wrap: nowrap;
+justify-content: space-between;
+align-items: center;
+margin: 20px 20px 0px 20px;
 }
 .category-card__button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: url(../img/icons/card-button-arrow.svg);
+  width: 50px;
+  height: 50px;
 }
-.button {
+/* =========== popular products ========= */
+.products__list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.products__item{
+  max-width: 300px;
+  border-radius: 8px;
+border: 1px solid #E3E2E2;
+background: #FFF;
+box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
+}
+.product-card__size{
+  color:  #535353;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.product-card__title{
+  font-weight: 600;
+}
+.exist__text{
+  font-weight: 600;
+}
+.product-card__cost{
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.cost__previous{
+  color: #E03D3D;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4; 
+  text-decoration: line-through;
+}
+.cost__actual{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
 }
