@@ -352,3 +352,9 @@ box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
   flex-wrap: nowrap;
   gap: 30px;
 }
+/* =============== footer ================ */
+
+.footer{
+  min-height: 50px;
+
+}
