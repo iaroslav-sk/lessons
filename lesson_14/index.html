@@ -13,74 +13,97 @@
     </header>
     <main>
       <div class="wrapper">
-        <form enctype="multipart/form-data" action="#" class="form">
-          <div class="general">
-            <div class="general__header form-header">
-              <img
-                src="img/icons/icon-info.svg"
-                alt="Інформація"
-                class="form-header__icon"
-              />
-              <h2 class="form-header__title">Інформація про покупця</h2>
-            </div>
-            <div class="general__box box">
-              <div class="box__name">
-                <input
-                  name="form[]"
-                  placeholder="Прізвище"
-                  class="general__input"
-                  tabindex="1"
-                  type="text"
+        <div class="form-wrapper">
+          <form enctype="multipart/form-data" action="#" class="form">
+            <div class="general form__section">
+              <div class="general__header form-header">
+                <img
+                  src="img/icons/icon-info.svg"
+                  alt="Інформація"
+                  class="form-header__icon"
                 />
-                <input
-                  name="form[]"
-                  placeholder="І'мя"
-                  class="general__input"
-                  tabindex="2"
-                  type="text"
-                />
-                <input
-                  name="form[]"
-                  placeholder="По батькові"
-                  class="general__input"
-                  tabindex="3"
-                  type="text"
-                />
-                <div class="form__checkbox checkbox">
+                <h2 class="form-header__title">Інформація про покупця</h2>
+              </div>
+              <div class="general__box box">
+                <div class="box__name">
                   <input
-                    class="general__checkbox-input"
-                    id="check-1"
                     name="form[]"
-                    type="checkbox"
+                    placeholder="Прізвище"
+                    class="general__input"
+                    tabindex="1"
+                    type="text"
                   />
-                  <label class="general__checkbox" for="check-1"
-                    >Отримуватиме замовлення інша людина</label
-                  >
+                  <input
+                    name="form[]"
+                    placeholder="І'мя"
+                    class="general__input"
+                    tabindex="2"
+                    type="text"
+                  />
+                  <input
+                    name="form[]"
+                    placeholder="По батькові"
+                    class="general__input"
+                    tabindex="3"
+                    type="text"
+                  />
+                </div>
+
+                <div class="box__contact">
+                  <input
+                    name="form[]"
+                    placeholder="Контактний телефон"
+                    class="general__input"
+                    tabindex="4"
+                    type="tel"
+                  />
+                  <input
+                    name="form[]"
+                    placeholder="E-mail"
+                    class="general__input"
+                    tabindex="4"
+                    type="mail"
+                  />
                 </div>
               </div>
-              <div class="box__contact">
+              <div class="general__checkbox checkbox">
                 <input
+                  class="checkbox__general"
+                  id="general-1"
                   name="form[]"
-                  placeholder="Контактний телефон"
-                  class="general__input"
-                  tabindex="4"
-                  type="tel"
+                  type="checkbox"
                 />
-                <input
-                  name="form[]"
-                  placeholder="E-mail"
-                  class="general__input"
-                  tabindex="4"
-                  type="mail"
-                />
+                <label class="checkbox__text" for="general-1"
+                  >Отримуватиме замовлення інша людина</label
+                >
               </div>
             </div>
-          </div>
-
-          <div class="delivery"></div>
-          <div class="pay-method"></div>
-          <div class="comment"></div>
-        </form>
+            <div class="delivery form__section">
+              <div class="general__header form-header">
+                <img
+                  src="img/icons/icon-delivery.svg"
+                  alt="Інформація"
+                  class="form-header__icon"
+                />
+                <h2 class="form-header__title">Вибір способу доставки</h2>
+              </div>
+              <div class="delivery__checkbox self-pickup">
+                <input
+                  class="delivery__input"
+                  id="delivery-1"
+                  name="form[]"
+                  type="checkbox"
+                />
+                <label class="delivery__lable" for="delivery-1"
+                  >Отримуватиме замовлення інша людина
+                  <span class="delivery__price"></span
+                ></label>
+              </div>
+            </div>
+            <div class="pay-method"></div>
+            <div class="comment"></div>
+          </form>
+        </div>
       </div>
     </main>
     <footer class="footer">

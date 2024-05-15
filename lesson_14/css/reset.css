@@ -6,24 +6,30 @@
   border: none;
   box-sizing: border-box;
 }
+
 *::before,
 *::after {
   display: inline-block;
 }
+
 a {
   text-decoration: none;
   color: inherit;
   display: inline-block;
 }
-label{
+
+label {
   display: inline-block;
 }
+
 li {
   list-style: none;
 }
+
 img {
   vertical-align: top;
 }
+
 h1,
 h2,
 h3,
@@ -33,6 +39,7 @@ h6 {
   font-weight: inherit;
   font-size: inherit;
 }
+
 html,
 body {
   line-height: 1;
@@ -49,16 +56,13 @@ textarea {
   color: inherit;
   background-color: transparent;
 }
-input,
-textarea {
-  width: 100%;
-}
 
 button,
 select,
 option {
   cursor: pointer;
 }
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
