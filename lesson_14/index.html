@@ -87,17 +87,49 @@
                 />
                 <h2 class="form-header__title">Вибір способу доставки</h2>
               </div>
-              <div class="delivery__checkbox self-pickup">
-                <input
-                  class="delivery__input"
-                  id="delivery-1"
-                  name="form[]"
-                  type="checkbox"
-                />
-                <label class="delivery__lable" for="delivery-1"
-                  >Отримуватиме замовлення інша людина
-                  <span class="delivery__price"></span
-                ></label>
+              <div class="delivery__methods">
+                <div class="delivery__checkbox self-pickup">
+                  <div class="self-pickup__pic"></div>
+                  <input
+                    class="delivery__input"
+                    id="delivery-1"
+                    name="form[]"
+                    type="checkbox"
+                  />
+                  <label class="delivery__lable" for="delivery-1"
+                    >Самовивіз із магазину<span class="delivery__price"
+                      >Бесплатно</span
+                    ></label
+                  >
+                </div>
+                <div class="delivery__checkbox new-post">
+                  <div class="new-post__pic"></div>
+                  <input
+                    class="delivery__input"
+                    id="delivery-2"
+                    name="form[]"
+                    type="checkbox"
+                  />
+                  <label class="delivery__lable" for="delivery-2"
+                    >Доставка Нова Пошта<span class="delivery__price"
+                      >≈ від 500 грн</span
+                    ></label
+                  >
+                </div>
+                <div class="delivery__checkbox courier">
+                  <div class="courier__pic"></div>
+                  <input
+                    class="delivery__input"
+                    id="delivery-3"
+                    name="form[]"
+                    type="checkbox"
+                  />
+                  <label class="delivery__lable" for="delivery-3"
+                    >Доставка кур'єром<span class="delivery__price"
+                      >≈ від 200 грн</span
+                    ></label
+                  >
+                </div>
               </div>
             </div>
             <div class="pay-method"></div>
