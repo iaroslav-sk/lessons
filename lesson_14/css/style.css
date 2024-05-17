@@ -198,4 +198,65 @@ body {
 
 .delivery__price {
   display: inline-block;
+  color: #535353;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.46;
+}
+
+.delivery__address {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 30px;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #F8F8F8;
+}
+
+.address__description {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.address__point-pic {}
+
+.address__schedule {
+  display: inline-block;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.87;
+}
+
+.address__street {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.40;
+}
+
+.address__description {}
+
+.address__map {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  flex-shrink: 0;
+  border-radius: 8px;
+  padding-block: 13px;
+  padding-inline: 20px;
+  background: #FFBC57;
+  gap: 10px;
+  align-items: center;
+}
+
+.map__text {
+  display: inline-block;
+  flex-grow: 1;
+  flex-shrink: 0;
+  color: #FFF;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.26;
 }
