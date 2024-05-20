@@ -156,13 +156,57 @@
               </div>
             </div>
             <div class="pay form__section">
-              <div class="general__header form-header">
+              <div class="pay__header form-header">
                 <img
                   src="img/icons/icon-delivery.svg"
                   alt="Інформація"
                   class="form-header__icon"
                 />
                 <h2 class="form-header__title">Вибір способу оплати</h2>
+              </div>
+              <div class="pay__checkbox cash">
+                <input
+                  class="pay__input"
+                  id="pay-1"
+                  name="form[]"
+                  type="checkbox"
+                />
+                <label class="pay__lable" for="pay-1"
+                  >Готівкою при отриманні (Післясплата)</label
+                >
+                <div class="self-pickup__pic"></div>
+              </div>
+              <div class="pay__checkbox online-pay">
+                <input
+                  class="pay__input"
+                  id="pay-2"
+                  name="form[]"
+                  type="checkbox"
+                />
+                <label class="pay__lable" for="pay-2"
+                  >Оплата карткою на сайті</label
+                >
+                <div class="self-pickup__pic"></div>
+              </div>
+              <div class="pay__checkbox privat-pay">
+                <input
+                  class="pay__input"
+                  id="pay-3"
+                  name="form[]"
+                  type="checkbox"
+                />
+                <label class="pay__lable" for="pay-3">Privat Pay</label>
+                <div class="self-pickup__pic"></div>
+              </div>
+              <div class="pay__checkbox credit-pay">
+                <input
+                  class="pay__input"
+                  id="pay-4"
+                  name="form[]"
+                  type="checkbox"
+                />
+                <label class="pay__lable" for="pay-4">Кредит від Krovato</label>
+                <div class="self-pickup__pic"></div>
               </div>
             </div>
             <div class="comment"></div>

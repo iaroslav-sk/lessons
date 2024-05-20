@@ -236,8 +236,6 @@ body {
   line-height: 1.40;
 }
 
-.address__description {}
-
 .address__map {
   display: flex;
   flex-wrap: nowrap;
@@ -259,4 +257,11 @@ body {
   font-size: 19px;
   font-weight: 600;
   line-height: 1.26;
+}
+
+/* ======================pay==================== */
+.pay__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
