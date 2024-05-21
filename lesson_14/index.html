@@ -169,47 +169,107 @@
                   class="pay__input"
                   id="pay-1"
                   name="form[]"
-                  type="checkbox"
+                  type="radio"
                 />
                 <label class="pay__lable" for="pay-1"
                   >Готівкою при отриманні (Післясплата)</label
                 >
-                <div class="self-pickup__pic"></div>
               </div>
               <div class="pay__checkbox online-pay">
                 <input
                   class="pay__input"
                   id="pay-2"
                   name="form[]"
-                  type="checkbox"
+                  type="radio"
                 />
                 <label class="pay__lable" for="pay-2"
                   >Оплата карткою на сайті</label
                 >
-                <div class="self-pickup__pic"></div>
+                <img
+                  src="img/icons/icon-master-card-logo.svg"
+                  alt="Інформація"
+                  class="pay__pic"
+                />
+                <img
+                  src="img/icons/icon-visa-card-logo.svg"
+                  alt="Інформація"
+                  class="pay__pic"
+                />
               </div>
               <div class="pay__checkbox privat-pay">
                 <input
                   class="pay__input"
                   id="pay-3"
                   name="form[]"
-                  type="checkbox"
+                  type="radio"
                 />
                 <label class="pay__lable" for="pay-3">Privat Pay</label>
-                <div class="self-pickup__pic"></div>
+                <img
+                  src="img/icons/icon-privat-pay-logo.svg"
+                  alt="Інформація"
+                  class="pay__pic"
+                />
               </div>
-              <div class="pay__checkbox credit-pay">
+              <div class="pay__checkbox credit-crovato">
                 <input
                   class="pay__input"
-                  id="pay-4"
+                  id="pay-5"
                   name="form[]"
-                  type="checkbox"
+                  type="radio"
                 />
-                <label class="pay__lable" for="pay-4">Кредит від Krovato</label>
-                <div class="self-pickup__pic"></div>
+                <label class="pay__lable" for="pay-5">Кредит від Krovato</label>
+              </div>
+              <div class="pay__checkbox credit-privat">
+                <input
+                  class="pay__input"
+                  id="pay-6"
+                  name="form[]"
+                  type="radio"
+                />
+                <label class="pay__lable" for="pay-6"
+                  >Оплата частинами ПриватБанк</label
+                >
+                <img
+                  src="img/icons/icon-privaty-credit-logo.svg"
+                  alt="Інформація"
+                  class="pay__pic"
+                />
+              </div>
+              <div class="pay__checkbox credit-mono">
+                <input
+                  class="pay__input"
+                  id="pay-7"
+                  name="form[]"
+                  type="radio"
+                />
+                <label class="pay__lable" for="pay-7"
+                  >Оплата частинами МоноБанк</label
+                >
+                <img
+                  src="img/icons/icon-mono-bank-logo.svg"
+                  alt="Інформація"
+                  class="pay__pic"
+                />
               </div>
             </div>
-            <div class="comment"></div>
+            <div class="comment form__section">
+              <div class="comment__header form-header">
+                <img
+                  src="img/icons/icon-delivery.svg"
+                  alt="Інформація"
+                  class="form-header__icon"
+                />
+                <h2 class="form-header__title">Коментар до замовлення</h2>
+              </div>
+              <textarea
+                name="comment"
+                id="comment-1"
+                class="comment__textarea"
+              ></textarea>
+            </div>
+            <button type="submit" class="form__submit-btn">
+              ОФОРМИТИ ЗАМОВЛЕННЯ
+            </button>
           </form>
         </div>
       </div>
