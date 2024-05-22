@@ -14,55 +14,58 @@
     <main>
       <div class="wrapper">
         <div class="form-wrapper">
-          <form enctype="multipart/form-data" action="#" class="form">
+          <form method="post" action="#" class="form">
             <div class="general form__section">
-              <div class="general__header form-header">
+              <div class="general__header header">
                 <img
                   src="img/icons/icon-info.svg"
                   alt="Інформація"
-                  class="form-header__icon"
+                  class="header__icon"
                 />
-                <h2 class="form-header__title">Інформація про покупця</h2>
+                <h2 class="header__title">Інформація про покупця</h2>
               </div>
-              <div class="general__box box">
-                <div class="box__name">
+              <div class="general__box buyer">
+                <div class="buyer__name">
                   <input
                     name="form[]"
                     placeholder="Прізвище"
-                    class="general__input"
+                    class="buyer__input"
                     tabindex="1"
                     type="text"
+                    required
                   />
                   <input
                     name="form[]"
                     placeholder="І'мя"
-                    class="general__input"
+                    class="buyer__input"
                     tabindex="2"
                     type="text"
+                    required
                   />
                   <input
                     name="form[]"
                     placeholder="По батькові"
-                    class="general__input"
+                    class="buyer__input"
                     tabindex="3"
                     type="text"
                   />
                 </div>
 
-                <div class="box__contact">
+                <div class="buyer__contact">
                   <input
                     name="form[]"
                     placeholder="Контактний телефон"
-                    class="general__input"
+                    class="buyer__input"
                     tabindex="4"
                     type="tel"
+                    required
                   />
                   <input
                     name="form[]"
                     placeholder="E-mail"
-                    class="general__input"
+                    class="buyer__input"
                     tabindex="4"
-                    type="mail"
+                    type="email"
                   />
                 </div>
               </div>
@@ -72,6 +75,7 @@
                   id="general-1"
                   name="form[]"
                   type="checkbox"
+                  tabindex="5"
                 />
                 <label class="checkbox__text" for="general-1"
                   >Отримуватиме замовлення інша людина</label
@@ -79,53 +83,72 @@
               </div>
             </div>
             <div class="delivery form__section">
-              <div class="general__header form-header">
+              <div class="delivery__header header">
                 <img
                   src="img/icons/icon-delivery.svg"
                   alt="Інформація"
-                  class="form-header__icon"
+                  class="header__icon"
                 />
-                <h2 class="form-header__title">Вибір способу доставки</h2>
+                <h2 class="header__title">Вибір способу доставки</h2>
               </div>
               <div class="delivery__methods">
-                <div class="delivery__checkbox self-pickup">
-                  <div class="self-pickup__pic"></div>
+                <div class="delivery__checkbox">
                   <input
                     class="delivery__input"
                     id="delivery-1"
                     name="form[]"
-                    type="checkbox"
+                    tabindex="6"
+                    value="self-pickup"
+                    type="radio"
                   />
-                  <label class="delivery__lable" for="delivery-1"
-                    >Самовивіз із магазину<span class="delivery__price"
+                  <label class="delivery__lable" for="delivery-1">
+                    <img
+                      src="./img/icons/delivery-self-pickup.svg"
+                      alt="самовивіз"
+                      class="delivery__pic"
+                    />
+                    Самовивіз із магазину<span class="delivery__price"
                       >Бесплатно</span
                     ></label
                   >
                 </div>
-                <div class="delivery__checkbox new-post">
-                  <div class="new-post__pic"></div>
+                <div class="delivery__checkbox">
                   <input
                     class="delivery__input"
                     id="delivery-2"
                     name="form[]"
-                    type="checkbox"
+                    tabindex="7"
+                    value="new-post"
+                    type="radio"
+                    checked
                   />
-                  <label class="delivery__lable" for="delivery-2"
-                    >Доставка Нова Пошта<span class="delivery__price"
+                  <label class="delivery__lable" for="delivery-2">
+                    <img
+                      src="./img/icons/icon-np.svg"
+                      alt="нова пошта"
+                      class="delivery__pic"
+                    />
+                    Доставка Нова Пошта<span class="delivery__price"
                       >≈ від 500 грн</span
                     ></label
                   >
                 </div>
-                <div class="delivery__checkbox courier">
-                  <div class="courier__pic"></div>
+                <div class="delivery__checkbox">
                   <input
                     class="delivery__input"
                     id="delivery-3"
                     name="form[]"
-                    type="checkbox"
+                    tabindex="8"
+                    value="courier"
+                    type="radio"
                   />
-                  <label class="delivery__lable" for="delivery-3"
-                    >Доставка кур'єром<span class="delivery__price"
+                  <label class="delivery__lable" for="delivery-3">
+                    <img
+                      src="./img/icons/icon-courier.svg"
+                      alt="доставка кур'єром"
+                      class="delivery__pic"
+                    />
+                    Доставка кур'єром<span class="delivery__price"
                       >≈ від 200 грн</span
                     ></label
                   >
@@ -145,7 +168,7 @@
                     </span>
                   </p>
                 </div>
-                <a href="./" class="address__map map"
+                <a href="./" target="_blank" class="address__map map"
                   ><img
                     src="./img/icons/icon-on-map.svg"
                     alt="відобразити на мапі"
@@ -156,120 +179,137 @@
               </div>
             </div>
             <div class="pay form__section">
-              <div class="pay__header form-header">
+              <div class="pay__header header">
                 <img
                   src="img/icons/icon-delivery.svg"
                   alt="Інформація"
-                  class="form-header__icon"
+                  class="header__icon"
                 />
-                <h2 class="form-header__title">Вибір способу оплати</h2>
+                <h2 class="header__title">Вибір способу оплати</h2>
               </div>
-              <div class="pay__checkbox cash">
-                <input
-                  class="pay__input"
-                  id="pay-1"
-                  name="form[]"
-                  type="radio"
-                />
-                <label class="pay__lable" for="pay-1"
-                  >Готівкою при отриманні (Післясплата)</label
-                >
-              </div>
-              <div class="pay__checkbox online-pay">
-                <input
-                  class="pay__input"
-                  id="pay-2"
-                  name="form[]"
-                  type="radio"
-                />
-                <label class="pay__lable" for="pay-2"
-                  >Оплата карткою на сайті</label
-                >
-                <img
-                  src="img/icons/icon-master-card-logo.svg"
-                  alt="Інформація"
-                  class="pay__pic"
-                />
-                <img
-                  src="img/icons/icon-visa-card-logo.svg"
-                  alt="Інформація"
-                  class="pay__pic"
-                />
-              </div>
-              <div class="pay__checkbox privat-pay">
-                <input
-                  class="pay__input"
-                  id="pay-3"
-                  name="form[]"
-                  type="radio"
-                />
-                <label class="pay__lable" for="pay-3">Privat Pay</label>
-                <img
-                  src="img/icons/icon-privat-pay-logo.svg"
-                  alt="Інформація"
-                  class="pay__pic"
-                />
-              </div>
-              <div class="pay__checkbox credit-crovato">
-                <input
-                  class="pay__input"
-                  id="pay-5"
-                  name="form[]"
-                  type="radio"
-                />
-                <label class="pay__lable" for="pay-5">Кредит від Krovato</label>
-              </div>
-              <div class="pay__checkbox credit-privat">
-                <input
-                  class="pay__input"
-                  id="pay-6"
-                  name="form[]"
-                  type="radio"
-                />
-                <label class="pay__lable" for="pay-6"
-                  >Оплата частинами ПриватБанк</label
-                >
-                <img
-                  src="img/icons/icon-privaty-credit-logo.svg"
-                  alt="Інформація"
-                  class="pay__pic"
-                />
-              </div>
-              <div class="pay__checkbox credit-mono">
-                <input
-                  class="pay__input"
-                  id="pay-7"
-                  name="form[]"
-                  type="radio"
-                />
-                <label class="pay__lable" for="pay-7"
-                  >Оплата частинами МоноБанк</label
-                >
-                <img
-                  src="img/icons/icon-mono-bank-logo.svg"
-                  alt="Інформація"
-                  class="pay__pic"
-                />
-              </div>
+              <ul class="pay__list">
+                <li class="pay__checkbox">
+                  <input
+                    class="pay__input"
+                    id="pay-1"
+                    name="form[]"
+                    tabindex="0"
+                    type="radio"
+                    value="cash"
+                    checked
+                  />
+                  <label class="pay__lable" for="pay-1"
+                    >Готівкою при отриманні (Післясплата)</label
+                  >
+                </li>
+                <li class="pay__checkbox">
+                  <input
+                    class="pay__input"
+                    id="pay-2"
+                    name="form[]"
+                    tabindex="10"
+                    value="online"
+                    type="radio"
+                  />
+                  <label class="pay__lable" for="pay-2"
+                    >Оплата карткою на сайті
+                    <img
+                      src="img/icons/icon-master-card-logo.svg"
+                      alt="Інформація"
+                      class="pay__pic" />
+                    <img
+                      src="img/icons/icon-visa-card-logo.svg"
+                      alt="Інформація"
+                      class="pay__pic"
+                  /></label>
+                </li>
+                <li class="pay__checkbox">
+                  <input
+                    class="pay__input"
+                    id="pay-3"
+                    name="form[]"
+                    tabindex="11"
+                    value="privat-pay"
+                    type="radio"
+                  />
+                  <label class="pay__lable" for="pay-3"
+                    >Privat Pay
+                    <img
+                      src="img/icons/icon-privat-pay-logo.svg"
+                      alt="Інформація"
+                      class="pay__pic"
+                  /></label>
+                </li>
+                <li class="pay__checkbox">
+                  <input
+                    class="pay__input"
+                    id="pay-5"
+                    name="form[]"
+                    tabindex="12"
+                    value="credit-krovato"
+                    type="radio"
+                  />
+                  <label class="pay__lable" for="pay-5"
+                    >Кредит від Krovato</label
+                  >
+                </li>
+                <li class="pay__checkbox">
+                  <input
+                    class="pay__input"
+                    id="pay-6"
+                    name="form[]"
+                    tabindex="13"
+                    value="part-pay-privat"
+                    type="radio"
+                  />
+                  <label class="pay__lable" for="pay-6"
+                    >Оплата частинами ПриватБанк
+                    <img
+                      src="img/icons/icon-privaty-credit-logo.svg"
+                      alt="Інформація"
+                      class="pay__pic"
+                  /></label>
+                </li>
+                <li class="pay__checkbox">
+                  <input
+                    class="pay__input"
+                    id="pay-7"
+                    name="form[]"
+                    tabindex="14"
+                    value="part-pay-mono"
+                    type="radio"
+                  />
+                  <label class="pay__lable" for="pay-7"
+                    >Оплата частинами МоноБанк
+                    <img
+                      src="img/icons/icon-mono-bank-logo.svg"
+                      alt="Інформація"
+                      class="pay__pic"
+                  /></label>
+                </li>
+              </ul>
             </div>
             <div class="comment form__section">
-              <div class="comment__header form-header">
+              <div class="comment__header header">
                 <img
                   src="img/icons/icon-delivery.svg"
                   alt="Інформація"
-                  class="form-header__icon"
+                  class="header__icon"
                 />
-                <h2 class="form-header__title">Коментар до замовлення</h2>
+                <h2 class="header__title">Коментар до замовлення</h2>
               </div>
               <textarea
                 name="comment"
                 id="comment-1"
+                placeholder="Ваш коментар"
                 class="comment__textarea"
               ></textarea>
             </div>
-            <button type="submit" class="form__submit-btn">
-              ОФОРМИТИ ЗАМОВЛЕННЯ
-            </button>
+            <div class="submit form__section">
+              <button type="submit" class="submit__btn">
+                ОФОРМИТИ ЗАМОВЛЕННЯ
+              </button>
+            </div>
           </form>
         </div>
       </div>
