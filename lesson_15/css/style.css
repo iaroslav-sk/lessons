@@ -1,0 +1,279 @@
+@import url(reset.css);
+
+body {
+  font-family: "Proxima Nova", sans-serif;
+  color: #2B2929;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.2;
+  background-color: #F8F8F8;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding-inline: 15px;
+}
+
+.section {
+  padding-block-start: 70px;
+}
+
+.section__title {
+  color: #2B2929;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+[class*="__container"] {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ================= Header ====================== */
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 15px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.about-us__list {
+  display: flex;
+  gap: 30px;
+}
+
+.header__contacts {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__list {
+  display: flex;
+
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.help__box {
+  display: flex;
+  align-items: center;
+}
+
+.language__list {
+  position: relative;
+  padding-right: 25px;
+}
+
+.language__list>.list__item:not(:first-child) {
+  display: none;
+}
+
+.language__list>.list__item::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 25px;
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/icons/arrow.svg);
+}
+
+.contacts__text {
+  margin-right: 20px;
+}
+
+.bottom-side {
+  background-color: #fff;
+
+}
+
+.main-logo {
+  min-width: 250px;
+}
+
+.catalog__button {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 11px 20px;
+  min-width: 145px;
+  background-color: #FFBC57;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.search {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding-block: 15px;
+  background-color: #fff;
+  border: 1px solid white;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-block: 18px;
+  background-color: #fff;
+  color: #535353;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.26;
+}
+
+@media (max-width: 1320px) {
+  .categories {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+}
+
+.categories__left-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 40px;
+}
+
+.categories__rigth-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 40px;
+}
+
+.input {
+  display: flex;
+  flex-basis: 420px;
+}
+
+.input__area {
+  position: relative;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 50px;
+  border: 1px solid #B1B1B1;
+  border-radius: 8px;
+  color: var(--Theme-Grey-light, #B1B1B1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.87;
+  padding: 10px 15px;
+}
+
+@media (max-width: 1130px) {
+  .input {
+    flex: 1 0 230px;
+  }
+
+  .contacts__text {
+    display: none;
+  }
+}
+
+.input__area::before {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(../img/icons/search.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.call-us {
+  display: flex;
+  text-align: center;
+  flex-wrap: nowrap;
+  flex: 1 0 230px;
+  gap: 10px;
+}
+
+.call-us__icon {
+  width: 50px;
+  height: 50px;
+}
+
+
+
+.call-us__box {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 1130px) {
+  .call-us {
+    flex: 0 1 0;
+  }
+
+  .call-us__box,
+  .call-us__arrow {
+    display: none;
+  }
+}
+
+
+.call-us__arrow {
+  margin-top: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.call-us__schedule {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.call-us__phone {
+  color: #2B2929;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.selected-box {
+  display: flex;
+  gap: 20px;
+}
+
+.categories__left-list>.list__item {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.categories__left-list,
+.categories__rigth-list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 40px;
+}
+
+/* =============== footer ================ */
+
+.footer {
+  min-height: 50px;
+
+}
