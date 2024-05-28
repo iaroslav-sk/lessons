@@ -87,12 +87,75 @@ body {
   margin-right: 20px;
 }
 
+.logo__phone-icon,
+.logo__burger,
+.find__icon {
+  display: none;
+}
+
+
+
+@media (max-width: 600px) {
+  .find__icon {
+    display: block;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo__burger {
+    display: block;
+  }
+}
+
+@media (max-width: 950px) {
+  .about-us {
+    display: none;
+  }
+
+  .search {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .logo__phone-icon {
+    display: inline;
+  }
+}
+
+@media (max-width: 410px) {
+
+  .logo__phone-icon,
+  .favorite,
+  .basket {
+    display: none;
+  }
+
+  .search__interactive {
+    justify-content: space-around;
+  }
+
+}
+
 .bottom-side {
   background-color: #fff;
 
 }
 
-.main-logo {
+.search__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+@media (max-width: 800px) {
+  .search__logo {
+    justify-content: space-around;
+  }
+}
+
+.logo__main {
   min-width: 250px;
 }
 
@@ -112,11 +175,19 @@ body {
   border-radius: 8px;
 }
 
+.search__interactive {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-basis: 100%;
+  align-items: center;
+  gap: 30px;
+}
+
 .search {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: center;
   gap: 30px;
   padding-block: 15px;
   background-color: #fff;
@@ -133,6 +204,12 @@ body {
   font-size: 19px;
   font-weight: 600;
   line-height: 1.26;
+}
+
+@media (max-width: 800px) {
+  .categories {
+    display: none;
+  }
 }
 
 @media (max-width: 1320px) {
@@ -175,6 +252,12 @@ body {
   padding: 10px 15px;
 }
 
+@media (max-width: 600px) {
+  .input {
+    display: none;
+  }
+}
+
 @media (max-width: 1130px) {
   .input {
     flex: 1 0 230px;
@@ -184,6 +267,8 @@ body {
     display: none;
   }
 }
+
+
 
 .input__area::before {
   position: absolute;
@@ -210,13 +295,17 @@ body {
   height: 50px;
 }
 
-
-
 .call-us__box {
   display: flex;
   text-align: left;
   flex-direction: column;
   flex-wrap: nowrap;
+}
+
+@media (max-width: 950px) {
+  .call-us {
+    display: none;
+  }
 }
 
 @media (max-width: 1130px) {
