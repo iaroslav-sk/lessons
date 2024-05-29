@@ -87,13 +87,33 @@ body {
   margin-right: 20px;
 }
 
+.list__link {
+  transition: all 0.5s;
+  color: #2B2929;
+}
+
+@media only screen and (min-width: 800px) and (any-hover: hover) {
+  .list__link:hover {
+    transition: all 0.3s;
+    color: #FFBC57;
+  }
+}
+
+
+
 .logo__phone-icon,
 .logo__burger,
 .find__icon {
   display: none;
 }
 
-
+.logo__phone-icon,
+.logo__burger,
+.find__icon,
+.call-us__icon {
+  width: 50px;
+  height: 50px;
+}
 
 @media (max-width: 600px) {
   .find__icon {
@@ -168,7 +188,7 @@ body {
 }
 
 .logo__main {
-  flex-basis: 250px;
+  max-width: 250px;
 }
 
 .catalog__button {
@@ -210,6 +230,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  column-gap: 40px;
   padding-block: 18px;
   background-color: #fff;
   color: #535353;
@@ -233,24 +254,14 @@ body {
 
 }
 
-.categories__left-list {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 40px;
-}
 
-.categories__rigth-list {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 40px;
-}
-
-.input {
+.form {
+  position: relative;
   display: flex;
   flex-basis: 420px;
 }
 
-.input__area {
+.form__input {
   position: relative;
   flex-grow: 1;
   flex-shrink: 1;
@@ -261,17 +272,17 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.87;
-  padding: 10px 15px;
+  padding: 10px 45px 10px 10px;
 }
 
 @media (max-width: 600px) {
-  .input {
+  .form {
     display: none;
   }
 }
 
 @media (max-width: 1130px) {
-  .input {
+  .form {
     flex: 1 0 230px;
   }
 
@@ -280,9 +291,7 @@ body {
   }
 }
 
-
-
-.input__area::before {
+.form__submit {
   position: absolute;
   top: 13px;
   right: 15px;
@@ -300,11 +309,6 @@ body {
   flex-wrap: nowrap;
   flex: 1 0 230px;
   gap: 10px;
-}
-
-.call-us__icon {
-  width: 50px;
-  height: 50px;
 }
 
 .call-us__box {
@@ -364,17 +368,28 @@ body {
   gap: 10px;
 }
 
+.list__icon--messanger {
+  width: 30px;
+  height: 30px;
+}
+
 .categories__left-list,
 .categories__rigth-list {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 40px;
+  justify-content: center;
+  row-gap: 20px;
+  column-gap: 40px;
+}
+
+.list__item {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 /* =============== footer ================ */
 
 .footer {
   min-height: 50px;
-
 }

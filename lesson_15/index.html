@@ -108,9 +108,16 @@
                   Каталог
                 </button>
               </div>
-              <div class="input">
-                <div class="input__area">Пошук товарів</div>
-              </div>
+              <form method="get" action="#" class="form">
+                <input
+                  name="form[]"
+                  placeholder="Пошук товарів"
+                  class="form__input"
+                  type="text"
+                  required
+                />
+                <button type="submit" class="form__submit"></button>
+              </form>
               <div class="call-us">
                 <img
                   src="img/icons/icon-tel.svg"
@@ -193,6 +200,9 @@
               </li>
               <li class="list__item">
                 <a href="#" class="list__link list__link--bold">Офіс</a>
+              </li>
+
+
               </li>
             </ul>
           </div>
