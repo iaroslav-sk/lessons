@@ -102,41 +102,34 @@ body {
   }
 }
 
-
-
 .logo__phone-icon,
-.logo__burger--btn,
+.logo__burger,
 .find {
   display: none;
 }
 
 .logo__phone-icon,
-.logo__burger--btn,
 .find__icon,
 .call-us__icon {
   width: 50px;
   height: 50px;
 }
 
-/* .open .logo__burger--btn {
-  border: 1px solid #FFBC57;
+.logo__burger {
+  width: 45px;
+  height: 45px;
 }
 
-.open .logo__burger--btn {
-  transform: rotate(-45deg);
-  top: 50%;
-  margin-top: -1px;
+.logo__burger {
+  transition: all 0.3s;
+  background: url(../img/icons/burger-menu.svg) center / 45px 45px no-repeat;
 }
 
-.open .logo__burger--btn {
-  transform: rotate(45deg);
-  bottom: 50%;
-  margin-bottom: -1px;
+.open .logo__burger {
+  transition: all 0.3s;
+  transform: rotateY(180deg);
+  background: url(../img/icons/close-button.svg) center / 45px 45px no-repeat;
 }
-
-.open .logo__burger--btn {
-  transform: scale(0);
-} */
 
 @media (max-width: 600px) {
   .find__icon {
@@ -145,7 +138,7 @@ body {
 }
 
 @media (max-width: 800px) {
-  .logo__burger--btn {
+  .logo__burger {
     display: block;
   }
 }
@@ -176,12 +169,10 @@ body {
     justify-content: space-around;
     gap: 10px;
   }
-
 }
 
 .bottom-side {
   background-color: #fff;
-
 }
 
 .search__logo {
@@ -200,6 +191,22 @@ body {
 @media (max-width: 410px) {
   .search__logo {
     gap: 10px;
+  }
+
+  .logo__burger {
+    width: 35px;
+    height: 35px;
+  }
+
+  .open .logo__burger {
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .logo__phone-icon {
+    width: 40px;
+    height: 40px;
   }
 
   .logo__main {
