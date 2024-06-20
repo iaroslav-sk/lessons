@@ -16,7 +16,8 @@ body {
 }
 
 .section {
-  padding-block-start: 70px;
+  padding-block-start: 35px;
+  padding-block-end: 35px;
 }
 
 .section__title {
@@ -472,7 +473,7 @@ body {
   flex-wrap: nowrap;
 }
 
-/* ==================================== main ========================================== */
+/* ==================================== popular categories ========================================== */
 .products__list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -591,4 +592,47 @@ body {
   justify-content: space-between;
   flex-wrap: nowrap;
   gap: 30px;
+}
+
+/* ==================================== clothes categories ========================================== */
+.clothes {
+  border-radius: 40px;
+  background: #F0F0F0;
+}
+
+.clothes__title {
+  color: #000;
+  text-align: center;
+  font-family: "Integral CF";
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.clothes__categories-list {
+  max-width: 1240px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 289px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.clothes__item:nth-child(4n + 3) {
+  grid-column: span 2;
+}
+
+.clothes__item {}
+
+.clothes__name {
+  color: #000;
+  font-family: Satoshi;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.clothes__pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 407 / 289;
 }
