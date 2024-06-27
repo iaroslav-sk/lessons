@@ -2,4 +2,121 @@
 @import "_fonts.scss";
 @import "_reset.scss";
 
+[class*="__wrapper"] {
+  width: 1320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* ======================= @mixins ================================== */
+@mixin text(
+  $color: #fff,
+  $font-family: "Exo 2",
+  $font-size: 30px,
+  $font-weight: 400,
+  $line-height: 20px
+) {
+  color: $color;
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
 /* ======================= header ================================== */
+.header {
+  display: flex;
+  background: #000001;
+  padding-block-start: 60px;
+  padding-block-end: 30px;
+  @media (max-width: 1100px) {
+    padding-block-start: 30px;
+    padding-block-end: 15px;
+  }
+  @media (max-width: 620px) {
+    padding-block-start: 15px;
+    padding-block-end: 15px;
+  }
+
+  // .header__wrapper
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 100px;
+    column-gap: 30px;
+    @media (max-width: 1100px) {
+      row-gap: 25px;
+      flex-direction: column;
+    }
+    @media (max-width: 620px) {
+      row-gap: 10px;
+    }
+  }
+  // .header__logo
+  &__logo {
+  }
+  // .header__services
+  &__services {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    @media (max-width: 740px) {
+      column-gap: 25px;
+    }
+    @media (max-width: 480px) {
+      row-gap: 10px;
+    }
+  }
+}
+.logo {
+  // .logo__text
+  &__text {
+    @include text(#ffffff, "Exo 2", 30px, 400, 20px);
+    letter-spacing: -3px;
+    display: inline-block;
+    @media (max-width: 620px) {
+      font-size: 20px;
+    }
+  }
+}
+.services {
+  // .services__item
+  &__item {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  // .services__text
+  &__text {
+    @include text(#fff, Orbitron, 16px, 500, 20px);
+    text-transform: uppercase;
+    @media (max-width: 620px) {
+      font-size: 12px;
+    }
+  }
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 19px;
+  // .social__item
+  &__item {
+  }
+  // .social__link
+  &__link {
+  }
+  // .social__icon
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+}

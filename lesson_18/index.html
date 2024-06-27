@@ -3,13 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,700;1,700&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,500;1,500&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Lesson_17</title>
   </head>
-
   <body>
-    <header class="header"></header>
-    <main></main>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__logo logo">
+          <p class="logo__text">Video Alchemist</p>
+        </div>
+        <ul class="header__services">
+          <li class="services__item">
+            <p class="services__text">home</p>
+          </li>
+          <li class="services__item">
+            <p class="services__text">about</p>
+          </li>
+          <li class="services__item">
+            <p class="services__text">portfolio</p>
+          </li>
+          <li class="services__item">
+            <p class="services__text">testimonials</p>
+          </li>
+          <li class="services__item">
+            <p class="services__text">contact</p>
+          </li>
+        </ul>
+        <ul class="social">
+          <li class="social__item">
+            <a href="#" class="social__link"
+              ><img
+                src="./img/icons/facebook-icon.svg"
+                alt="facebook"
+                class="social__icon"
+            /></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link"
+              ><img
+                src="./img/icons/linkedin-icon.svg"
+                alt="linkedin"
+                class="social__icon"
+            /></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link"
+              ><img
+                src="./img/icons/youtube-icon.svg"
+                alt="youtube"
+                class="social__icon"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="general">
+        <div class="general__left personal">
+          <p class="personal__name">Jimmy Turner</p>
+          <h1 class="personal__profession">Professional video editor</h1>
+          <div class="personal__skill">Making your videos look more cool.</div>
+          <button class="personal__feedback">lets talk</button>
+        </div>
+        <div class="general__right">
+          <img
+            src="img/content/author-photo-1x.webp"
+            alt="фото автора"
+            srcset="
+              img/content/author-photo-2x.webp 2x,
+              img/content/author-photo-4x.webp 4x
+            "
+            class="general__photo"
+          />
+        </div>
+      </section>
+    </main>
     <footer class="footer"></footer>
   </body>
 </html>
