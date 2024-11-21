@@ -222,6 +222,9 @@ textarea {
       flex-wrap: wrap;
   gap: 19px;
 }
+.social__item {
+  display: inherit;
+}
 .social__icon {
   width: 20px;
   height: 20px;
